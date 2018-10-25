@@ -1,1 +1,1 @@
-This repository contains all the file/programs that i studied/developed
+This repository contains all the files/programs that i studied/developed
