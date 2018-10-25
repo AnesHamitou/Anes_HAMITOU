@@ -10,7 +10,7 @@ extern int errno;
 int main(int argc, char **argv){
 	struct passwd *pw;
 	if(argc!=3){
-		printf("USAGE : ./exo14 [-l|-u] <login>|<uid>\n");
+		printf("USAGE : %s [-l|-u] <login>|<uid>\n", argv[0]);
 		exit(EXIT_FAILURE);
 	}
 	if(strcmp(argv[1],"-l")==0){
@@ -53,7 +53,7 @@ int main(int argc, char **argv){
                 printf("Shell : %s\n",pw->pw_shell);
         }
 	else{
-		printf("USAGE : ./exo14 [-l|-u] <login>|<uid>\n");
+		printf("USAGE : %s [-l|-u] <login>|<uid>\n", argv[0]);
 	}
 	exit(EXIT_SUCCESS);
 }
