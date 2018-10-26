@@ -11,8 +11,6 @@
 
 #define MY_PORT 9998
 #define MAXBUF	1024
-#define NUMBER_OF_CLIENTS 2048
-
 
 int main(int argc, const char *argv[])
 {
@@ -78,7 +76,7 @@ int main(int argc, const char *argv[])
 
 					if(strstr(buffer,"/exit")==buffer)
 					{
-						printf("Je meurs [%d]\n",getpid());
+						printf("Child closed [%d]\n",getpid());
 						close(numOfConnectedDescriptor);
 						exit(0);
 					}
