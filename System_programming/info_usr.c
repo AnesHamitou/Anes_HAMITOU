@@ -1,5 +1,5 @@
 /*
- * To test for the whole system users : in a terminal
+ * To test for the all system users : in a terminal
  * for i in `cut -d : -f 1 /etc/passwd`; do ./info_usr -l $i; done
  */
 
