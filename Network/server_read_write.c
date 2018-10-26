@@ -76,5 +76,5 @@ int main(int argc, char **argv){
 }
 
 /*
- *this code was written in part by Christian Toinard
+ *this code is implemented from a base provided by Christian Toinard
  */

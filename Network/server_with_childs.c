@@ -90,5 +90,5 @@ int main(int argc, const char *argv[])
 }
 
 /*
- *this code was written in part by Christian Toinard
+ *this code is implemented from a base provided by Christian Toinard
  */
