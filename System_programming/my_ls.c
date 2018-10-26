@@ -1,6 +1,6 @@
 /*
  * This program implements the "ls" command
- * it manages links, file lists "*", recursive calls are not managed yet.
+ * it manages links, file lists (when the input is "*"), recursive calls are not managed yet.
  */
 
 #include<stdio.h>
