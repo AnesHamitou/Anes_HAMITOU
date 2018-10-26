@@ -13,5 +13,5 @@ int main(int argc, char **argv){
 		exit(EXIT_FAILURE);
 	}
 	printf("Current working directory : %s\n",pwd);
-	exit(EXIT_FAILURE);
+	exit(EXIT_SUCCESS);
 }
