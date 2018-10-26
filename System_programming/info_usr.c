@@ -1,3 +1,8 @@
+/*
+ * To test for the whole system users : in a terminal
+ * for i in `cut -d : -f 1 /etc/passwd`; do ./info_usr -l $i; done
+ */
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<pwd.h>
