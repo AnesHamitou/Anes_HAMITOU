@@ -4,8 +4,8 @@
 #   then it selects the best decrypted sentence that looks like english   
 #   For this, the program uses :
 #       -An english dictionary which contains english quadgrams and a Python program that calculates sentence scores according 
-#	to their similarity to English : https://github.com/jameslyons/python_cryptanalysis/blob/master/ngram_score.py 
-#   The key here is set to have a maximum size of 10 characters, this can be changed by modifying the 'for' loop at line 90
+#	 to their similarity to English : https://github.com/jameslyons/python_cryptanalysis/blob/master/ngram_score.py 
+#   The key here is set to have a maximum size of 10 characters, this can be changed by modifying the 'for' loop at line 92
 #   See example file 'vignere_autobreak.txt'
 
 import ngram_score as ns
@@ -76,8 +76,8 @@ def autobreak(encrypted_msg):
 	For each length (n) (1...10) : 
 	the function finds the best (key, decrypted message) by testing all possibilities
         
-        A....Z
-        AA.....ZZ
+	A....Z
+	AA.....ZZ
 	AAA.......ZZZ 
         to AAAAAAAAAA.......ZZZZZZZZZZ
 
@@ -89,7 +89,7 @@ def autobreak(encrypted_msg):
 	l_tmp_text=[]
 	l_max_final_score=[]
 	l_max_final_text=[]
-	for length in range(1,11):
+	for length in range(1,11): #key length (here, maximum 10 characters)
 		for letter in range(65,91):
 			l=[chr(letter)]*length
 			#To test each time another loop and finds if the key changes
