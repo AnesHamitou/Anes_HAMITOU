@@ -1,7 +1,7 @@
 #This program decrypts a message encrypted using Vignère cipher (without knowing the key) :
 #   To decrypt a message, this program tests the decryption with all possible keys, for example if the key has a maximum 
 #   length of 5, it begins to decrypt using as key A ..... Z then AA ........ ZZ to AAAAA ........ ZZZZZ
-#   then it selects the best decrypted sentence that looks like English   
+#   then it selects the best decrypted sentence that looks like english   
 #   For this, the program uses :
 #       -An english dictionary which contains english quadgrams and a Python program that calculates sentence scores according 
 #	to their similarity to English : https://github.com/jameslyons/python_cryptanalysis/blob/master/ngram_score.py 
