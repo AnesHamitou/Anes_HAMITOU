@@ -1,9 +1,11 @@
 #This program decrypts a message encrypted using Vignère cipher (without knowing the key) :
-#   To decrypt a message, this program tests the decryption with all possible keys, for example if the key has a maximum length of 5, it begins to decrypt using as key A ..... Z then AA ........ ZZ to AAAAA ........ ZZZZZ
+#   To decrypt a message, this program tests the decryption with all possible keys, for example if the key has a maximum 
+#   length of 5, it begins to decrypt using as key A ..... Z then AA ........ ZZ to AAAAA ........ ZZZZZ
 #   then it selects the best decrypted sentence that looks like English   
-#   For this, the program use :
-#       -An english dictionary which contains english quadgrams and a Python program that calculates sentence scores according to their similarity to English : https://github.com/jameslyons/python_cryptanalysis/blob/master/ngram_score.py 
-#   the key here is set to have a maximum size of 10 characters, this can be changed by modifying the 'for' loop at line 90
+#   For this, the program uses :
+#       -An english dictionary which contains english quadgrams and a Python program that calculates sentence scores according 
+#	to their similarity to English : https://github.com/jameslyons/python_cryptanalysis/blob/master/ngram_score.py 
+#   The key here is set to have a maximum size of 10 characters, this can be changed by modifying the 'for' loop at line 90
 #   See example file 'vignere_autobreak.txt'
 
 import ngram_score as ns
