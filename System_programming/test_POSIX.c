@@ -1,3 +1,7 @@
+/*
+ * Exemple of use : gcc -D_POSIX_C_SOURCE=2001 -D_XOPEN_SOURCE=4 test_POSIX.c -o test_POSIX
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
