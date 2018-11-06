@@ -83,7 +83,7 @@ def autobreak(encrypted_msg):
 
 	Then it saves the best one (text) in a list -l_max_final_text- and its score in a list -l_max_final_score-
 
-	Using these lists, it prints the best key, the best decrypted message and it's score for each key length.
+	Using these lists, it prints the best key, the best decrypted message and its score for each key length.
 	"""
 	l_tmp_score=[]
 	l_tmp_text=[]
