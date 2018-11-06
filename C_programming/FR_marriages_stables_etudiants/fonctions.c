@@ -295,6 +295,8 @@ etudiant* meuilleur_resultats(etudiant* e, filiere* f){
 	return NULL;
 }
 
+
+/**************************************************
 void detruire_liste_etudiants(liste_etudiants* L_e){
 	etudiant* e=L_e->tete;
 	if(e!=NULL){
@@ -328,3 +330,4 @@ void detruire_liste_filieres(liste_filieres* L_f){
 		free(L_f);
 	}
 }
+********************************************************/
